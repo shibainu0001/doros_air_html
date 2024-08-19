@@ -1,0 +1,1267 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Example</title>
+    <style>
+        /* 全体のコンテナを左右に2列に配置 */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        /* 左右のカラム設定 */
+        .column {
+            width: 48%;
+        }
+
+        /* チェックボックスを隠す */
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        /* チェックボックスがチェックされた場合のスタイル */
+        input[type="checkbox"]:checked + label + span {
+            display: inline;
+        }
+
+        /* 表示する単語はデフォルトで隠す */
+        span.word {
+            display: none;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+        /* ボタン風のスタイル */
+        label {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        label:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<h2>ボタンを押して単語を表示する</h2>
+
+<div class="container">
+    <!-- 左のカラム -->
+    <div class="column">
+        <div>
+            <input type="checkbox" id="btn0">
+            <label for="btn0">ボタン0</label>
+            <span class="word">遠い未来でも語り継がれるだろう</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn1">
+            <label for="btn1">ボタン1</label>
+            <span class="word">不思議な魅力があって、ついつい気になってしまう</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn2">
+            <label for="btn2">ボタン2</label>
+            <span class="word">いつか誰かに語り継いでほしい</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn3">
+            <label for="btn3">ボタン3</label>
+            <span class="word">人に話したら驚かれるかもしれない</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn4">
+            <label for="btn4">ボタン4</label>
+            <span class="word">子供に見せたら泣き出しそうなほどの衝撃的な</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn5">
+            <label for="btn5">ボタン5</label>
+            <span class="word">どこかで見たことがあるような気がする</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn6">
+            <label for="btn6">ボタン6</label>
+            <span class="word">これを見て笑わない人はいない、そんな確信</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn7">
+            <label for="btn7">ボタン7</label>
+            <span class="word">ついつい二度見してしまうほど気になる</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn8">
+            <label for="btn8">ボタン8</label>
+            <span class="word">どうしても気になってしまう魅力がある</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn9">
+            <label for="btn9">ボタン9</label>
+            <span class="word">人生のどんな瞬間にも寄り添ってくれる</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn10">
+            <label for="btn10">ボタン10</label>
+            <span class="word">話のネタにぴったりの面白さが詰まっている</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn11">
+            <label for="btn11">ボタン11</label>
+            <span class="word">思わずクスッと笑ってしまうような小さな楽しみ</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn12">
+            <label for="btn12">ボタン12</label>
+            <span class="word">思わず誰かに話したくなるようなエピソード</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn13">
+            <label for="btn13">ボタン13</label>
+            <span class="word">一生のうちに一度は出会いたいと思う</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn14">
+            <label for="btn14">ボタン14</label>
+            <span class="word">何か新しいことを始めるきっかけとなる</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn15">
+            <label for="btn15">ボタン15</label>
+            <span class="word">何か新しい挑戦を始めたくなるような</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn16">
+            <label for="btn16">ボタン16</label>
+            <span class="word">どんなときでも元気をくれる存在</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn17">
+            <label for="btn17">ボタン17</label>
+            <span class="word">一度試してみたくなる、そんな不思議な</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn18">
+            <label for="btn18">ボタン18</label>
+            <span class="word">気づけばいつも考えてしまうような</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn19">
+            <label for="btn19">ボタン19</label>
+            <span class="word">一度聞くと忘れられない、そんなインパクト</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn20">
+            <label for="btn20">ボタン20</label>
+            <span class="word">友達に見せると大ウケしそうなユーモア</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn21">
+            <label for="btn21">ボタン21</label>
+            <span class="word">人生の節目で思い出したい</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn22">
+            <label for="btn22">ボタン22</label>
+            <span class="word">日々の小さな幸せを感じさせてくれる</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn23">
+            <label for="btn23">ボタン23</label>
+            <span class="word">長い年月を経ても色褪せない価値がある</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn24">
+            <label for="btn24">ボタン24</label>
+            <span class="word">深夜にふと考えたくなるような</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn25">
+            <label for="btn25">ボタン25</label>
+            <span class="word">一度聞いたら絶対に忘れられないインパクトが強い</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn26">
+            <label for="btn26">ボタン26</label>
+            <span class="word">お世話になった人に感謝を込めて贈りたい</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn27">
+            <label for="btn27">ボタン27</label>
+            <span class="word">過去の自分に教えてあげたかった</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn28">
+            <label for="btn28">ボタン28</label>
+            <span class="word">絶対に秘密にしておきたいほどの面白さ</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn29">
+            <label for="btn29">ボタン29</label>
+            <span class="word">どこか懐かしく、そして新鮮に感じる</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn30">
+            <label for="btn30">ボタン30</label>
+            <span class="word">一度触れたらもう戻れないような魅力</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn31">
+            <label for="btn31">ボタン31</label>
+            <span class="word">誰かと共有することでさらに深まる</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn32">
+            <label for="btn32">ボタン32</label>
+            <span class="word">密かに笑いを誘う仕掛けが隠されている</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn33">
+            <label for="btn33">ボタン33</label>
+            <span class="word">何か大きな決断をするときに思い出したい</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn34">
+            <label for="btn34">ボタン34</label>
+            <span class="word">どんな状況でも笑いを誘うこと間違いなしの</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn35">
+            <label for="btn35">ボタン35</label>
+            <span class="word">気づいたらずっと考えてしまう不思議な魅力</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn36">
+            <label for="btn36">ボタン36</label>
+            <span class="word">つい誰かに見せたくなるような面白さ</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn37">
+            <label for="btn37">ボタン37</label>
+            <span class="word">気がついたら頭から離れなくなる不思議さ</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn38">
+            <label for="btn38">ボタン38</label>
+            <span class="word">お風呂で思い出すとシュールで笑える</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn39">
+            <label for="btn39">ボタン39</label>
+            <span class="word">何か大事なことを思い出させてくれる</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn40">
+            <label for="btn40">ボタン40</label>
+            <span class="word">夜中に見るとゾクッとするかもしれない恐ろしさ</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn41">
+            <label for="btn41">ボタン41</label>
+            <span class="word">長年探し続けて、やっと見つけた</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn42">
+            <label for="btn42">ボタン42</label>
+            <span class="word">いつか自分自身を振り返るときに思い出したい</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn43">
+            <label for="btn43">ボタン43</label>
+            <span class="word">絶対に忘れられないインパクトがある</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn44">
+            <label for="btn44">ボタン44</label>
+            <span class="word">密かにコレクションしたくなるほどの面白さ</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn45">
+            <label for="btn45">ボタン45</label>
+            <span class="word">人生の目標にしたいと思えるような</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn46">
+            <label for="btn46">ボタン46</label>
+            <span class="word">何かと便利そうな予感がする</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn47">
+            <label for="btn47">ボタン47</label>
+            <span class="word">誰かにそっと教えてあげたくなるような</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn48">
+            <label for="btn48">ボタン48</label>
+            <span class="word">深夜に見ると怖くて眠れなくなるかもしれない</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn49">
+            <label for="btn49">ボタン49</label>
+            <span class="word">絶対に上司には見せられない内容</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn50">
+            <label for="btn50">ボタン50</label>
+            <span class="word">なぜか心に刺さる一言を持っている</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn51">
+            <label for="btn51">ボタン51</label>
+            <span class="word">大切な記念日をさらに特別にしてくれる</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn52">
+            <label for="btn52">ボタン52</label>
+            <span class="word">どんな状況でもポジティブになれるような</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn53">
+            <label for="btn53">ボタン53</label>
+            <span class="word">何気ない日常を少しだけ特別にしてくれる</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn54">
+            <label for="btn54">ボタン54</label>
+            <span class="word">想像すると笑いが止まらなくなるほどユニークな</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn55">
+            <label for="btn55">ボタン55</label>
+            <span class="word">一度きりの人生において重要だと思える</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn56">
+            <label for="btn56">ボタン56</label>
+            <span class="word">大切な人と分かち合いたい瞬間</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn57">
+            <label for="btn57">ボタン57</label>
+            <span class="word">何か大切なものを思い出させる</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn58">
+            <label for="btn58">ボタン58</label>
+            <span class="word">一度手に取ると手放せなくなる、そんな魅力</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn59">
+            <label for="btn59">ボタン59</label>
+            <span class="word">特別な日にこそ感じたいもの</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn60">
+            <label for="btn60">ボタン60</label>
+            <span class="word">無性に気になってしまう存在感</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn61">
+            <label for="btn61">ボタン61</label>
+            <span class="word">親に知られたら恥ずかしい思いをするかもしれない</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn62">
+            <label for="btn62">ボタン62</label>
+            <span class="word">誰もがつい笑ってしまうようなユーモア</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn63">
+            <label for="btn63">ボタン63</label>
+            <span class="word">心の奥底にある大切な思い出</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn64">
+            <label for="btn64">ボタン64</label>
+            <span class="word">夜空の星を見上げたときに思い出したい</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn65">
+            <label for="btn65">ボタン65</label>
+            <span class="word">なぜか心に残る不思議な魅力</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn66">
+            <label for="btn66">ボタン66</label>
+            <span class="word">困難なときにこそ思い出したい</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn67">
+            <label for="btn67">ボタン67</label>
+            <span class="word">いつか映画のワンシーンで見たい</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn68">
+            <label for="btn68">ボタン68</label>
+            <span class="word">見れば見るほど味が出る、そんな深みがある</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn69">
+            <label for="btn69">ボタン69</label>
+            <span class="word">未来を明るく照らしてくれる、希望のような</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn70">
+            <label for="btn70">ボタン70</label>
+            <span class="word">うっかりSNSに投稿したらバズりそうで怖い</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn71">
+            <label for="btn71">ボタン71</label>
+            <span class="word">何度でも繰り返し聞きたくなるような</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn72">
+            <label for="btn72">ボタン72</label>
+            <span class="word">他の誰にも真似できない、唯一無二の</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn73">
+            <label for="btn73">ボタン73</label>
+            <span class="word">朝の目覚まし代わりにちょうど良いインパクトがある</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn74">
+            <label for="btn74">ボタン74</label>
+            <span class="word">人々の心に長く残るであろう</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn75">
+            <label for="btn75">ボタン75</label>
+            <span class="word">友達に話すと止まらなくなるくらい面白い</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn76">
+            <label for="btn76">ボタン76</label>
+            <span class="word">なぜかクセになってしまう独特な魅力</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn77">
+            <label for="btn77">ボタン77</label>
+            <span class="word">いつか子供たちに教えてあげたいと思う</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn78">
+            <label for="btn78">ボタン78</label>
+            <span class="word">夢に出てきそうなほどのインパクト</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn79">
+            <label for="btn79">ボタン79</label>
+            <span class="word">何か大切なものを失いそうな気がする危険な魅力</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn80">
+            <label for="btn80">ボタン80</label>
+            <span class="word">長い時間をかけて育んできた</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn81">
+            <label for="btn81">ボタン81</label>
+            <span class="word">友達が見たら爆笑してしまいそうなユーモアのある</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn82">
+            <label for="btn82">ボタン82</label>
+            <span class="word">自分だけの秘密にしておきたい</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn83">
+            <label for="btn83">ボタン83</label>
+            <span class="word">誰もが思わず微笑んでしまうような</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn84">
+            <label for="btn84">ボタン84</label>
+            <span class="word">どこかで役に立ちそうな気がする、そんな魅力</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn85">
+            <label for="btn85">ボタン85</label>
+            <span class="word">知らない人に話すと変な顔をされること間違いなしの</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn86">
+            <label for="btn86">ボタン86</label>
+            <span class="word">心に響き続ける、忘れられない</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn87">
+            <label for="btn87">ボタン87</label>
+            <span class="word">意外と役に立つかもしれない知識</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn88">
+            <label for="btn88">ボタン88</label>
+            <span class="word">意外と使い道があるかもしれないユニークさ</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn89">
+            <label for="btn89">ボタン89</label>
+            <span class="word">知っているとちょっと得した気分になれる</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn90">
+            <label for="btn90">ボタン90</label>
+            <span class="word">次の世代に語り継いでほしいと願う</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn91">
+            <label for="btn91">ボタン91</label>
+            <span class="word">人生の教訓として心に刻みたい</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn92">
+            <label for="btn92">ボタン92</label>
+            <span class="word">時間が止まったかのように感じる</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn93">
+            <label for="btn93">ボタン93</label>
+            <span class="word">いつもそばに置いておきたい、安心感のある</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn94">
+            <label for="btn94">ボタン94</label>
+            <span class="word">友達と話したら必ず笑いが止まらなくなる</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn95">
+            <label for="btn95">ボタン95</label>
+            <span class="word">まさかと思うほど笑える意外性がある</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn96">
+            <label for="btn96">ボタン96</label>
+            <span class="word">部屋の隅っこに飾って、ちょっとした話題になる</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn97">
+            <label for="btn97">ボタン97</label>
+            <span class="word">人生を少しだけ豊かにしてくれる</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn98">
+            <label for="btn98">ボタン98</label>
+            <span class="word">未来の自分に伝えたいメッセージ</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn99">
+            <label for="btn99">ボタン99</label>
+            <span class="word">なんだかんだでハマってしまう奥深さがある</span>
+        </div>
+    </div>
+
+    <!-- 右のカラム -->
+    <div class="column">
+        <div>
+            <input type="checkbox" id="btn100">
+            <label for="btn100">ボタン100</label>
+            <span class="word">人気のYouTubeチャンネルのテーマ</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn101">
+            <label for="btn101">ボタン101</label>
+            <span class="word">天気予報の面白い予測</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn102">
+            <label for="btn102">ボタン102</label>
+            <span class="word">未来のロボット</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn103">
+            <label for="btn103">ボタン103</label>
+            <span class="word">有名な作家の名言</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn104">
+            <label for="btn104">ボタン104</label>
+            <span class="word">未来の技術</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn105">
+            <label for="btn105">ボタン105</label>
+            <span class="word">珍しい国の伝統行事</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn106">
+            <label for="btn106">ボタン106</label>
+            <span class="word">楽器</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn107">
+            <label for="btn107">ボタン107</label>
+            <span class="word">季節の行事</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn108">
+            <label for="btn108">ボタン108</label>
+            <span class="word">学校で習う面白い歴史の出来事</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn109">
+            <label for="btn109">ボタン109</label>
+            <span class="word">車のモデル</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn110">
+            <label for="btn110">ボタン110</label>
+            <span class="word">現代の都市伝説</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn111">
+            <label for="btn111">ボタン111</label>
+            <span class="word">スーパーヒーローの特殊能力</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn112">
+            <label for="btn112">ボタン112</label>
+            <span class="word">お祭りの屋台メニュー</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn113">
+            <label for="btn113">ボタン113</label>
+            <span class="word">人気のマンガの名場面</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn114">
+            <label for="btn114">ボタン114</label>
+            <span class="word">神秘的な古代の遺物</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn115">
+            <label for="btn115">ボタン115</label>
+            <span class="word">流行のファッションアイテム</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn116">
+            <label for="btn116">ボタン116</label>
+            <span class="word">文房具</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn117">
+            <label for="btn117">ボタン117</label>
+            <span class="word">コンビニの商品</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn118">
+            <label for="btn118">ボタン118</label>
+            <span class="word">有名な映画のセリフ</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn119">
+            <label for="btn119">ボタン119</label>
+            <span class="word">楽曲のジャンル</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn120">
+            <label for="btn120">ボタン120</label>
+            <span class="word">個性的な動物の特技</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn121">
+            <label for="btn121">ボタン121</label>
+            <span class="word">子供たちが考えた架空の生き物</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn122">
+            <label for="btn122">ボタン122</label>
+            <span class="word">キャラクター</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn123">
+            <label for="btn123">ボタン123</label>
+            <span class="word">名作映画のタイトル</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn124">
+            <label for="btn124">ボタン124</label>
+            <span class="word">流行のアプリの機能</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn125">
+            <label for="btn125">ボタン125</label>
+            <span class="word">話題の映画のストーリー</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn126">
+            <label for="btn126">ボタン126</label>
+            <span class="word">不思議な科学実験</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn127">
+            <label for="btn127">ボタン127</label>
+            <span class="word">日本の伝統工芸</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn128">
+            <label for="btn128">ボタン128</label>
+            <span class="word">楽譜</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn129">
+            <label for="btn129">ボタン129</label>
+            <span class="word">架空のスポーツ</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn130">
+            <label for="btn130">ボタン130</label>
+            <span class="word">未知のエイリアン</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn131">
+            <label for="btn131">ボタン131</label>
+            <span class="word">昔話に出てくる不思議なアイテム</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn132">
+            <label for="btn132">ボタン132</label>
+            <span class="word">写真のテーマ</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn133">
+            <label for="btn133">ボタン133</label>
+            <span class="word">世界遺産</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn134">
+            <label for="btn134">ボタン134</label>
+            <span class="word">不思議な冒険の物語</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn135">
+            <label for="btn135">ボタン135</label>
+            <span class="word">日常生活の中で見かける不思議な現象</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn136">
+            <label for="btn136">ボタン136</label>
+            <span class="word">超常現象の報告</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn137">
+            <label for="btn137">ボタン137</label>
+            <span class="word">花の種類</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn138">
+            <label for="btn138">ボタン138</label>
+            <span class="word">ファンタジーの世界に存在するアイテム</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn139">
+            <label for="btn139">ボタン139</label>
+            <span class="word">科学実験</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn140">
+            <label for="btn140">ボタン140</label>
+            <span class="word">美術館の展示品</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn141">
+            <label for="btn141">ボタン141</label>
+            <span class="word">古代の神話に登場する生き物</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn142">
+            <label for="btn142">ボタン142</label>
+            <span class="word">秘密のレシピ</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn143">
+            <label for="btn143">ボタン143</label>
+            <span class="word">都市伝説</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn144">
+            <label for="btn144">ボタン144</label>
+            <span class="word">奇抜なファッションのトレンド</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn145">
+            <label for="btn145">ボタン145</label>
+            <span class="word">カラオケの定番ソング</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn146">
+            <label for="btn146">ボタン146</label>
+            <span class="word">日用品</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn147">
+            <label for="btn147">ボタン147</label>
+            <span class="word">有名な音楽バンドの曲名</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn148">
+            <label for="btn148">ボタン148</label>
+            <span class="word">人気のボードゲーム</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn149">
+            <label for="btn149">ボタン149</label>
+            <span class="word">スポーツのトリックプレイ</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn150">
+            <label for="btn150">ボタン150</label>
+            <span class="word">新しい発明品</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn151">
+            <label for="btn151">ボタン151</label>
+            <span class="word">流行のゲームのキャラクター</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn152">
+            <label for="btn152">ボタン152</label>
+            <span class="word">観光地</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn153">
+            <label for="btn153">ボタン153</label>
+            <span class="word">鳥の種類</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn154">
+            <label for="btn154">ボタン154</label>
+            <span class="word">世界中の奇妙な風習</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn155">
+            <label for="btn155">ボタン155</label>
+            <span class="word">楽器のパーツ</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn156">
+            <label for="btn156">ボタン156</label>
+            <span class="word">映画のワンシーン</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn157">
+            <label for="btn157">ボタン157</label>
+            <span class="word">神話の神様</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn158">
+            <label for="btn158">ボタン158</label>
+            <span class="word">動物の鳴き声</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn159">
+            <label for="btn159">ボタン159</label>
+            <span class="word">美術館の展示品</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn160">
+            <label for="btn160">ボタン160</label>
+            <span class="word">香り</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn161">
+            <label for="btn161">ボタン161</label>
+            <span class="word">ゲームのジャンル</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn162">
+            <label for="btn162">ボタン162</label>
+            <span class="word">天気</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn163">
+            <label for="btn163">ボタン163</label>
+            <span class="word">香水の香り</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn164">
+            <label for="btn164">ボタン164</label>
+            <span class="word">子供の遊び</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn165">
+            <label for="btn165">ボタン165</label>
+            <span class="word">乗り物のパーツ</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn166">
+            <label for="btn166">ボタン166</label>
+            <span class="word">歴史的な出来事</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn167">
+            <label for="btn167">ボタン167</label>
+            <span class="word">スポーツのルール</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn168">
+            <label for="btn168">ボタン168</label>
+            <span class="word">料理の器</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn169">
+            <label for="btn169">ボタン169</label>
+            <span class="word">サッカーのポジション</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn170">
+            <label for="btn170">ボタン170</label>
+            <span class="word">飲み物</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn171">
+            <label for="btn171">ボタン171</label>
+            <span class="word">未来の宇宙探査計画</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn172">
+            <label for="btn172">ボタン172</label>
+            <span class="word">化石</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn173">
+            <label for="btn173">ボタン173</label>
+            <span class="word">懐かしいテレビ番組の名前</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn174">
+            <label for="btn174">ボタン174</label>
+            <span class="word">風景</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn175">
+            <label for="btn175">ボタン175</label>
+            <span class="word">伝説のスポーツ選手の名場面</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn176">
+            <label for="btn176">ボタン176</label>
+            <span class="word">料理の調味料</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn177">
+            <label for="btn177">ボタン177</label>
+            <span class="word">絵画のタイトル</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn178">
+            <label for="btn178">ボタン178</label>
+            <span class="word">おしゃれなカフェのメニュー</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn179">
+            <label for="btn179">ボタン179</label>
+            <span class="word">色の名前</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn180">
+            <label for="btn180">ボタン180</label>
+            <span class="word">コミカルなテレビのキャラクター</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn181">
+            <label for="btn181">ボタン181</label>
+            <span class="word">人気のアニメキャラクター</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn182">
+            <label for="btn182">ボタン182</label>
+            <span class="word">ダンスの種類</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn183">
+            <label for="btn183">ボタン183</label>
+            <span class="word">神社の儀式</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn184">
+            <label for="btn184">ボタン184</label>
+            <span class="word">体験型アトラクション</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn185">
+            <label for="btn185">ボタン185</label>
+            <span class="word">幻の食べ物</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn186">
+            <label for="btn186">ボタン186</label>
+            <span class="word">野菜</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn187">
+            <label for="btn187">ボタン187</label>
+            <span class="word">珍しい動物の生態</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn188">
+            <label for="btn188">ボタン188</label>
+            <span class="word">お祭りの屋台</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn189">
+            <label for="btn189">ボタン189</label>
+            <span class="word">面白い科学の事実</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn190">
+            <label for="btn190">ボタン190</label>
+            <span class="word">乗り物</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn191">
+            <label for="btn191">ボタン191</label>
+            <span class="word">昔話の登場人物</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn192">
+            <label for="btn192">ボタン192</label>
+            <span class="word">パズル</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn193">
+            <label for="btn193">ボタン193</label>
+            <span class="word">ファッションアイテム</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn194">
+            <label for="btn194">ボタン194</label>
+            <span class="word">童話</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn195">
+            <label for="btn195">ボタン195</label>
+            <span class="word">奇妙なデザインの建物</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn196">
+            <label for="btn196">ボタン196</label>
+            <span class="word">日常生活の困った事例</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn197">
+            <label for="btn197">ボタン197</label>
+            <span class="word">有名な漫画のキャラクター</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn198">
+            <label for="btn198">ボタン198</label>
+            <span class="word">星座</span>
+        </div>
+
+<div>
+            <input type="checkbox" id="btn199">
+            <label for="btn199">ボタン199</label>
+            <span class="word">変わった料理のレシピ</span>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
